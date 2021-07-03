@@ -1,8 +1,8 @@
 <?php
 include("./core/version.php");
 include("./core/addcount.php");
-$name = $_POST["bot-name"];
-$prefix = $_POST["bot-prefix"];
+$name = addslashes($_POST["bot-name"]);
+$prefix = addslashes($_POST["bot-prefix"]);
 $day = 86400;
 
 function HashSecurity($length = 4) {
